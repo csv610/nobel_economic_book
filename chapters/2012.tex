@@ -19,8 +19,23 @@ and kidney exchanges. Roth identified when markets fail and require design
 intervention, developing the concept of manipulability and proving that some
 matching mechanisms cannot be made strategy-proof.
 
-Their collaboration bridged abstract game theory and practical market design,
-creating a field that combines theoretical rigor with real-world impact.
+Shapley's earlier work on cooperative game theory and the Shapley value provided
+the theoretical foundation for understanding fair allocation in collaborative
+settings. The Shapley value assigns each player a payoff proportional to their
+marginal contribution across all possible coalitions, providing a principled
+method for dividing surplus among participants.
+
+Roth recognized that the matching market for medical residents was failing.
+The original match, designed by Shapley and others, had been manipulated by
+hospitals, making it unstable and inefficient. Roth redesigned the mechanism,
+creating the National Resident Matching Program (NRMP) algorithm that has
+successfully matched over 30,000 medical graduates to residency positions
+since 1998.
+
+The theory also applies to school choice systems. Roth and co-authors designed
+the Boston Public Schools match, which initially had problems with strategic
+manipulation. After criticism from economists, the system was redesigned to use
+the deferred acceptance algorithm, dramatically improving fairness and efficiency.
 
 \section{Impact on Economic Thinking}
 Shapley and Roth transformed understanding of market design and matching theory.
@@ -31,29 +46,52 @@ tools for analyzing allocation problems where prices are prohibited or impractic
 This influenced public policy regarding school choice, organ transplantation,
 and housing allocation. Roth's practical interventions improved matching
 mechanisms worldwide, demonstrating that economic theory could directly enhance
-social welfare.
+social welfare. The redesign of the Boston school choice system showed that
+theoretical insights could be rapidly applied to improve real-world outcomes.
 
 The work challenged the neoclassical assumption that markets always clear through
 price adjustments, showing that many important allocations occur without prices.
-Their theory also influenced computer science, game theory, and operations
-research, creating interdisciplinary connections that enriched all fields.
+Labor markets, housing markets, and educational placements often cannot use prices
+due to legal, ethical, or practical constraints. Stable matching provides the
+theoretical foundation for these non-price allocation mechanisms.
 
-The algorithmic foundations they established provided computational tools for
-solving large-scale matching problems in practice.
+Their theory also influenced computer science, game theory, and operations
+research, creating interdisciplinary connections that enriched all fields. The
+algorithmic foundations they established provided computational tools for
+solving large-scale matching problems in practice, with applications ranging
+from kidney exchange to spectrum allocation.
+
+The concept of stability has become central to mechanism design theory, providing
+a benchmark for evaluating the quality of allocation mechanisms. Researchers
+now routinely analyze whether proposed mechanisms produce stable outcomes and
+how they perform under strategic behavior.
 
 \section{Modern Perspectives Today}
 Market design based on Shapley and Roth's work has expanded to diverse
 applications. School choice systems in New York, Boston, and other cities use
-stable matching algorithms to assign students to schools.
+stable matching algorithms to assign students to schools, reducing stratification
+and improving access to quality education.
 
 Kidney exchange programs save lives by matching incompatible donor-patient pairs
-across hospitals. Spectrum auctions, blood donation systems, and even dating
-algorithms draw on matching theory.
+across hospitals. The National Kidney Registry in the United States uses algorithms
+based on stable matching to facilitate over 5,000 transplants annually. Roth has
+advocated for expanded use of these programs to address the chronic shortage of
+kidneys for transplant.
+
+Spectrum auctions, blood donation systems, and even dating algorithms draw on
+matching theory. The Federal Communications Commission has used auction designs
+informed by matching theory to allocate radio frequencies efficiently.
 
 Roth has advocated for market design solutions to organ shortage crises,
 proposing paired exchange and priority markets. The theory has been extended to
 dynamic matching, heterogeneous agents, and network-based allocations.
 
 Digital platforms like ride-sharing and food delivery use matching algorithms
-that embody stable matching principles. Climate policy mechanisms, such as
-carbon credit trading, also apply market design insights.
+that embody stable matching principles. Uber, Lyft, and DoorDash employ
+real-time matching algorithms that balance supply and demand across geographic
+spaces. Climate policy mechanisms, such as carbon credit trading, also apply
+market design insights to allocate emission permits efficiently.
+
+As matching theory continues to evolve, its applications expand to emerging
+challenges like organ allocation during pandemics, school choice in the age of
+virtual learning, and resource allocation in digital marketplaces.
