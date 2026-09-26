@@ -2,41 +2,43 @@
 \textbf{Laureates: }John Nash (USA), Reinhard Selten (Germany), John Harsanyi (Hungary/USA)
 
 \section*{Reason for Award}
-Pioneering analysis of equilibria in the theory of non-cooperative games
+For their pioneering analysis of equilibria in the theory of non-cooperative games
 
 \section{What They Did}
 John Nash introduced the Nash equilibrium concept, defining a situation in which
 each player's strategy is a best response to the strategies of all other players.
 In a Nash equilibrium, no player can improve their payoff by unilaterally
-deviating from their strategy. This concept became the foundational solution
-concept for non-cooperative games, providing a rigorous mathematical framework
-for analyzing strategic interactions. Nash proved that every finite game has at
-least one equilibrium, possibly in mixed strategies.
+deviating from their strategy. This became a foundational solution concept for
+non-cooperative games and a rigorous framework for analyzing strategic
+interaction. Nash proved that every finite game has at least one equilibrium in
+mixed or pure strategies, using a fixed-point argument.
 
 Reinhard Selten refined the equilibrium concept by introducing subgame
-perfection. Selten identified that some Nash equilibria rely on non-credible
-threats in dynamic games. Subgame perfection eliminates these implausible
-equilibria by requiring that strategies constitute Nash equilibria in every
-subgame of the original game. This refinement ensures that threats and promises
-are credible throughout the entire game tree, not just at the equilibrium path.
+perfection. He identified that some Nash equilibria rely on non-credible threats
+in dynamic games. Subgame perfection eliminates some of these equilibria by
+requiring that strategies constitute Nash equilibria in every subgame of the
+original game. This refinement requires threats and promises to be sequentially
+rational in proper subgames, not merely on the equilibrium path.
 
-John Harsanyi extended game theory to situations of incomplete information, where
-players possess private knowledge about their own types, preferences, or
+John Harsanyi extended game theory to situations of incomplete information,
+where players possess private knowledge about their own types, preferences, or
 payoffs. Harsanyi introduced the concept of types, where each player's type
-represents their private information. Using the common prior assumption, Harsanyi
-showed how players could form beliefs about others' types and update them
-Bayesianly. The resulting Bayesian Nash equilibrium became the standard tool for
-analyzing auctions, bargaining, and negotiations under asymmetric information.
+represents private information. Using type spaces and, in many models, a common
+prior, he showed how players could form beliefs about others' types and analyze
+strategic choices under asymmetric information. Bayesian Nash equilibrium
+became a standard tool for analyzing auctions, bargaining, and other games with
+private information.
 
-Together, these three laureates founded modern game theory, providing rigorous
-mathematical frameworks for analyzing strategic interactions across disciplines.
-Game theoretic methods are now standard in economics, political science, biology,
+Together, these three laureates supplied central solution concepts and methods
+that greatly expanded the usefulness of non-cooperative game theory. Game-
+theoretic methods are now used in economics, political science, biology,
 computer science, philosophy, and international relations.
 
 \subsection*{Nash Equilibrium}
 The Nash equilibrium represents a stable state of play where no player has an
 incentive to deviate unilaterally. Nash's proof relied on fixed-point theorems,
-showing that best response correspondences have equilibria under mild conditions.
+showing that best-response correspondences have equilibria under conditions
+such as finite strategy sets or appropriate compactness and continuity.
 The concept applies to both simultaneous and sequential games, though it does
 not always select the most plausible outcome in dynamic settings.
 
@@ -45,37 +47,38 @@ Selten's subgame perfection requires that strategies form Nash equilibria in
 every proper subgame. This refinement eliminates equilibria sustained by
 non-credible threats. For example, in a sequential entry game, a monopolist's
 threat to fight entry may not be credible if fighting is not optimal once entry
-has occurred. Subgame perfection ensures that threats are optimal at every
-decision node, making equilibrium strategies robust to the entire game structure.
+has occurred. Subgame perfection requires sequential rationality in every
+proper subgame; in games with appropriate perfect-information structure, this
+can be checked by backward induction. It does not guarantee a unique or
+empirically correct prediction.
 
 \subsection*{Bayesian Games}
-Harsanyi's innovation was to transform games of incomplete information into
-games of imperfect information by introducing nature as a first mover that
-selects players' types. This transformation allows Bayesian updating and the
-application of Nash equilibrium concepts to situations where players have private
-information. Harsanyi's approach provides the foundation for analyzing auctions,
-principal-agent problems, and signaling games.
+Harsanyi's innovation was to represent games of incomplete information as
+games of imperfect information by introducing nature as a device that selects
+players' types. This transformation allows beliefs and Nash equilibrium
+concepts to be used when players have private information. Harsanyi's approach
+became a foundation for analyzing auctions, principal--agent problems, and
+signaling games.
 
 \section{Impact on Economic Thinking}
-Nash, Selten, and Harsanyi collectively revolutionized the understanding of
-strategic decision making, replacing naive conjectures with a rigorous analytical
-framework. Equilibrium concepts provide solution concepts that predict outcomes
-in interactive situations where each agent's optimal choice depends on others'
-choices.
+Nash, Selten, and Harsanyi collectively transformed the analysis of strategic
+decision-making by providing rigorous solution concepts. Equilibrium concepts
+help researchers analyze situations where each agent's optimal choice depends
+on the choices and information of others, although equilibria may be multiple
+or may not predict observed behavior without additional assumptions.
 
-Self-enforcing strategies stabilize predictions, allowing researchers to analyze
-complex strategic environments systematically. Game theory became indispensable
-for analyzing oligopoly behavior, auction design, mechanism design, coalition
-formation, bargaining, negotiations, and conflict. The framework also found
-applications in evolutionary biology, where stable strategies explain population
+Self-enforcing strategies allow researchers to analyze complex strategic
+environments systematically. Game theory became an important tool for studying
+oligopoly behavior, auctions, mechanism design, coalition formation,
+bargaining, negotiation, and conflict. It also found applications in
+evolutionary biology, where stable strategies can help explain population
 dynamics.
 
-Central limit results in cooperative games provide the foundation for mechanism
-design theory. Principal-agent problems, asymmetric information, signaling, and
-screening all derive from non-cooperative game theoretic foundations. Nash
-equilibrium refinements address the multiplicity problem, with subgame perfection
-eliminating non-credible threats and Harsanyi's type space formulation handling
-incomplete information strategically.
+Mechanism design, principal--agent models, signaling, and screening build on
+game-theoretic analysis of incentives and private information. Nash-equilibrium
+refinements address some multiplicity problems, with subgame perfection
+eliminating equilibria supported by certain non-credible threats and Harsanyi's
+type-space formulation handling incomplete information.
 
 Strategic analysis permeates modern economic research across industrial
 organization, macroeconomics, finance, and public economics. Game theory has
@@ -87,21 +90,23 @@ of twentieth-century economic thought.
 \subsection*{Industrial Organization}
 Game theory transformed industrial organization by providing tools for analyzing
 oligopolistic competition, collusion, entry deterrence, and product differentiation.
-The Cournot, Bertrand, and Stackelberg models are all Nash equilibria in
-different strategic settings. Modern IO research relies heavily on game theoretic
-methods.
+Cournot, Bertrand, and Stackelberg models can be formulated as games with
+corresponding equilibrium concepts, including Nash or subgame-perfect
+equilibrium depending on the setting. Modern industrial-organization research
+relies heavily on game-theoretic methods.
 
 \subsection*{Auction Theory}
-Harsanyi's framework for incomplete information became the basis for auction
-theory, analyzing bidding strategies and revenue equivalence. Vickrey auctions,
-sealed-bid auctions, and ascending auctions are all analyzed using Bayesian game
-theoretic methods. Auction design has practical applications in spectrum
-licensing, emissions trading, and procurement.
+Harsanyi's framework for incomplete information became important in auction
+theory, where researchers analyze bidding strategies, information, and revenue.
+Vickrey, sealed-bid, and ascending auctions can be studied as Bayesian games.
+Auction design has practical applications in spectrum licensing, emissions
+trading, and procurement.
 
 \section{Modern Perspectives Today}
-Mechanism design exploits game theoretic foundations for designing incentives
-that achieve desired objectives. Auction formats for spectrum allocations, kidney
-matching, and school assignments build on Nash, Selten, and Harsanyi's work.
+Mechanism design uses game-theoretic foundations to design incentives and rules
+for specific objectives. Auction formats for spectrum allocation, as well as
+matching and school-assignment mechanisms, draw on the broader game-theory and
+mechanism-design literature that followed these contributions.
 Algorithmic game theory combines computational complexity with game theoretic
 solution concepts.
 
@@ -112,13 +117,20 @@ assumptions. Neuroeconomics investigates the neural correlates of strategic
 decision making.
 
 Algorithmic mechanism design addresses computational constraints in implementing
-theoretically optimal rules. Game theory underpins multi-agent systems, artificial
-intelligence, autonomous vehicle coordination, blockchain protocols, and security
-protocols. Cybersecurity attack-defense models use game theoretic frameworks.
+mechanisms. Game theory also informs multi-agent systems, artificial
+intelligence, autonomous-vehicle coordination, digital platforms, and security
+analysis, although these applications often require models beyond the original
+equilibrium frameworks.
 
-International climate agreements are modeled as repeated prisoner's dilemma
-games, while common pool resources are analyzed through tragedy of the commons
-frameworks. Extending the original contributions of Nash, Selten, and Harsanyi,
-game theory continues to grow, expanding into new frontiers of computational,
-behavioral, spatial, and networked strategic interactions. Their foundational
-work remains a vibrant active research frontier.
+International climate agreements are sometimes modeled as repeated or dynamic
+games, while common-pool resources are studied using strategic-interaction
+models. Extending the contributions of Nash, Selten, and Harsanyi, game theory
+continues to develop through computational, behavioral, spatial, and networked
+approaches.
+
+\subsection*{Key References}
+\begin{itemize}
+    \item Nash, J. F. (1950). ``Equilibrium Points in $n$-Person Games.'' \textit{Proceedings of the National Academy of Sciences}, 36(1), 48--49.
+    \item Harsanyi, J. C. (1967--1968). ``Games with Incomplete Information Played by `Bayesian' Players,'' Parts I--III. \textit{Management Science}, 14.
+    \item Selten, R. (1975). ``Reexamination of the Perfectness Concept for Equilibrium Points in Extensive Games.'' \textit{International Journal of Game Theory}, 4, 25--55.
+\end{itemize}

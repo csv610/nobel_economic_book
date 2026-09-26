@@ -2,8 +2,9 @@
 \textbf{Laureates: }Robert Engle (USA), Clive Granger (UK/Canada)
 
 \section*{Reason for Award}
-For methods of analyzing economic time series with time-varying volatility (ARCH)
-and common trends (cointegration)
+For methods of analyzing economic time series with time-varying volatility
+(ARCH), and for methods of analyzing economic time series with common trends
+(cointegration)
 
 \section{What They Did}
 Engle and Granger developed complementary econometric techniques for analyzing
@@ -14,47 +15,50 @@ problems in time series analysis that had puzzled economists for decades.
 Engle developed the Autoregressive Conditional Heteroskedasticity (ARCH) model
 and its generalization, the Generalized ARCH (GARCH) model, to address the
 empirical observation that financial time series exhibit volatility clustering.
-Asset returns display periods of high variability followed by more high
-variability, and periods of calm followed by more calm. Standard regression
-models assume constant variance (homoskedasticity), which is wildly unrealistic
-for financial data. ARCH models allow the conditional variance to depend on
-past squared innovations (residuals), capturing this clustering pattern.
+Asset returns often display periods of high variability followed by further high
+variability, and periods of calm followed by further calm. Basic regression
+models commonly assume constant variance (homoskedasticity), an assumption that
+can be inadequate for financial data. ARCH models allow the conditional variance
+to depend on past squared innovations (residuals), capturing this clustering
+pattern.
 
-GARCH models, which Engle later generalized, add persistence by allowing past
+GARCH models, introduced by Tim Bollerslev, add persistence by allowing past
 conditional variances to enter as well, producing more parsimonious
 representations of volatility dynamics. The GARCH(1,1) model--with one lag of
 the squared innovation and one lag of the conditional variance--has become the
-workhorse of financial econometrics. These models revolutionized risk
-management, option pricing, and financial econometrics.
+workhorse of financial econometrics. These models became important tools in risk
+management and financial econometrics, and they can also be used as inputs to
+some option-pricing models.
 
-Granger developed the concept of cointegration, which addresses the problem of
-spurious regression. When regressing one non-stationary time series on another,
-standard statistical tests can indicate a significant relationship even when
-none exists, because both series may exhibit trending behavior. Granger and
-Engle showed that if two or more non-stationary series are integrated of the
-same order, their linear combination may be stationary, indicating a long-run
-equilibrium relationship. Such series are said to be cointegrated.
+Granger developed the concept of cointegration, which helps address spurious
+regression. When regressing one non-stationary time series on another, standard
+tests can indicate a significant relationship even when none exists, because both
+series may trend over time. Granger and Engle showed that non-stationary series,
+often integrated of the same order, can have a linear combination that is
+stationary, indicating a long-run equilibrium relationship. Such series are said
+to be cointegrated; sharing an integration order alone is not sufficient.
 
-The error correction mechanism captures how variables adjust toward their
+The error-correction mechanism captures how variables may adjust toward their
 long-run equilibrium after a shock. If a variable deviates from its
-cointegrating relationship, the error correction term generates pressure to
-restore equilibrium. This framework reconciles short-run dynamics with
-long-run equilibrium relationships, providing a unified approach to modeling
-time series data.
+cointegrating relationship, an error-correction term can capture systematic
+adjustment toward equilibrium. This framework reconciles short-run dynamics with
+long-run equilibrium relationships, subject to the model's specification.
 
-Granger also developed the concept of Granger causality, which provides a
-practical notion of causality based on predictive content. If past values of
-X help predict future values of Y, then X is said to Granger-cause Y. This
-concept has been widely used in econometrics, though it has limitations that
-have been extensively discussed in the literature.
+Granger also developed the concept commonly called Granger causality, a notion
+of predictive precedence rather than structural causation. If past values of X
+improve forecasts of Y after conditioning on the model's other variables, X is
+said to Granger-cause Y. Omitted variables, contemporaneous feedback, structural
+breaks, and model misspecification can make this result a poor guide to causal
+effects.
 
 \section{Impact on Economic Thinking}
 Engle's ARCH family of models became the foundation of financial econometrics.
 Volatility clustering is now recognized as a fundamental feature of financial
 returns, and GARCH-type models are standard tools for volatility forecasting.
-Value-at-risk calculations, used by banks and regulators worldwide under Basel
-accords, rely on GARCH-type models. The ARCH model earned Engle the Nobel Prize
-and revolutionized how economists analyze financial data.
+Value-at-Risk calculations used by banks and regulators can incorporate
+GARCH-type volatility forecasts, alongside historical simulation, stress tests,
+and other risk models. The ARCH contribution helped change how economists and
+financial analysts model time-varying risk.
 
 Granger's cointegration methodology transformed macroeconomic analysis.
 Long-run equilibrium relationships--between money and prices, between exchange
@@ -63,16 +67,17 @@ now be estimated rigorously. Error correction models capture how variables
 adjust toward equilibrium, providing insights into the dynamics of economic
 adjustment and the speed of mean reversion.
 
-The Granger causality test, while often misunderstood and misapplied, remains
-widely used to examine predictive relationships between variables. VAR models,
-building on cointegration theory, became standard tools for macroeconomic
-forecasting, impulse response analysis, and policy evaluation.
+The Granger-causality test, while often misunderstood and misapplied, remains
+widely used to examine predictive relationships between variables. VAR models
+predate cointegration, while vector error-correction models incorporate
+cointegrating restrictions; these tools are used for macroeconomic forecasting,
+impulse-response analysis, and policy research.
 
-Their combined work established time series econometrics as a mature and
-rigorous field. Graduate programs worldwide now require mastery of ARCH,
-GARCH, cointegration, and error correction models as core competencies for
-empirical researchers. The Engle-Granger two-step procedure for testing
-cointegration became standard methodology.
+Their combined work made important contributions to modern time-series
+econometrics. ARCH/GARCH models, cointegration tests, and error-correction models
+became standard tools for empirical researchers. The Engle--Granger two-step
+procedure is useful under its assumptions, while alternatives such as Johansen's
+system methods are often preferred for multivariate systems.
 
 The methods they developed have been applied to a wide range of economic
 questions, from testing purchasing power parity to analyzing the relationship
@@ -86,23 +91,32 @@ effect. Multivariate models such as DCC-GARCH allow dynamic correlations
 between assets, improving portfolio diversification and risk management.
 
 Cointegration techniques have been extended to panel data, allowing
-cross-sectional dependencies to be analyzed alongside temporal dynamics.
-Vector error correction models remain standard for macroeconomic analysis,
-and the identification of structural VARs builds on the Granger causality
-framework.
+cross-sectional information to be analyzed alongside temporal dynamics. Vector
+error-correction models remain useful for macroeconomic analysis. Structural VAR
+identification is a related but distinct framework that requires additional
+economic restrictions; it should not be inferred from a Granger-causality test
+alone.
 
-Machine learning approaches are being hybridized with classical econometric
-methods, though the Engle-Granger framework remains foundational. Both
+Machine-learning approaches are being combined with classical econometric
+methods, though the Engle--Granger framework remains foundational. Both
 laureates' work continues to underpin empirical research, risk management,
 and policy analysis across economics and finance.
 
 Their innovations have been applied to diverse areas including commodity
 prices, exchange rates, interest rates, and asset returns. The concepts
 of volatility clustering and cointegration are now standard tools in
-empirical economics. Modern financial risk management relies heavily on
-GARCH models for volatility forecasting and risk measurement.
+empirical economics. Modern financial risk management can use GARCH models for
+volatility forecasting and risk measurement, alongside many other models and
+stress-testing methods.
 
 The Engle-Granger methodology has influenced how economists think about
 long-run relationships in economic data. Their work provided the tools
 for distinguishing between spurious correlations and genuine economic
 relationships, a fundamental issue in time series analysis.
+
+\subsection*{Key References}
+\begin{itemize}
+    \item Engle, R. F. (1982). ``Autoregressive Conditional Heteroscedasticity with Estimates of the Variance of United Kingdom Inflation.'' \textit{Econometrica}, 50(4), 987--1007.
+    \item Engle, R. F., \& Granger, C. W. (1987). ``Co-Integration and Error Correction: Representation, Estimation, and Testing.'' \textit{Econometrica}, 55(2), 251--276.
+    \item Bollerslev, T. (1986). ``Generalized Autoregressive Conditional Heteroskedasticity.'' \textit{Journal of Econometrics}, 31(3), 307--327.
+\end{itemize}

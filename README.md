@@ -4,10 +4,10 @@ A comprehensive LaTeX reference book covering all Nobel Memorial Prize in Econom
 
 ## Overview
 
-This book provides detailed entries for all 56 Nobel Prize in Economics laureates, organized chronologically by year of award. Each chapter covers:
+This book provides detailed entries for all 56 Nobel Memorial Prize in Economic Sciences awards and their 96 laureates through 2024, organized chronologically by year of award. Each chapter covers:
 
 - **Laureates** - Full names and nationalities
-- **Reason for Award** - Official citation
+- **Reason for Award** - Prize citation or concise summary
 - **What They Did** - Summary of key contributions
 - **Impact on Economic Thinking** - How their work transformed the field
 - **Modern Perspectives Today** - Contemporary relevance and applications
@@ -22,9 +22,10 @@ This book provides detailed entries for all 56 Nobel Prize in Economics laureate
 
 ## Book Statistics
 
-- **Total chapters:** 56
-- **Pages:** 132
-- **PDF size:** 291 KB
+- **Total awards/chapters:** 56
+- **Total laureates:** 96
+- **Pages:** 237
+- **PDF size:** approximately 562 KB
 - **Language:** English
 - **Format:** LaTeX (book class)
 
@@ -63,7 +64,7 @@ pdflatex nobel_economics.tex
 
 - **Compilation:** Clean (0 errors, 9 minor overfull warnings)
 - **Content:** Custom-written for each laureate
-- **Accuracy:** Verified against official Nobel Prize sources
+- **Accuracy:** Prize names and citations checked against official Nobel Prize sources; biographical and analytical claims reviewed chapter by chapter
 - **Consistency:** Uniform structure across all chapters
 
 ## Related Projects
@@ -77,5 +78,5 @@ pdflatex nobel_economics.tex
 
 ---
 
-**Generated:** August 2024
-**Last updated:** 2024-08-02
+**Generated:** August 2026
+**Last updated:** 2026-08-11

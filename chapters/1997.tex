@@ -2,124 +2,142 @@
 \textbf{Laureates: }Robert Merton (USA), Myron Scholes (USA)
 
 \section*{Reason for Award}
-Method for evaluating stock options and other financial derivatives
+For a new method to determine the value of derivatives
 
 \section{What They Did}
-Robert Merton and Myron Scholes developed the Black-Scholes option pricing model,
-providing a closed-form formula for pricing European options. The model assumes
-lognormal stock prices, constant volatility, no dividends, and frictionless
-markets with continuous trading possible. The risk-neutral valuation technique
-transforms the pricing problem into computing the expected discounted payoff
-under a special probability measure.
+Robert Merton and Myron Scholes developed a method for valuing derivatives,
+including the Black--Scholes formula for European options. In its simplest form,
+the model assumes a lognormally distributed stock price, constant volatility,
+no dividends, frictionless markets, and continuous trading. The associated
+risk-neutral valuation method transforms the pricing problem into the discounted
+expected payoff under an equivalent pricing measure; it does not assume that
+investors are actually risk-neutral.
 
-The Black-Scholes formula provides an objective metric for pricing options,
-allowing traders to hedge positions systematically. Risk management frameworks,
-including Value-at-Risk, derive from Black-Scholes methodology. Merton extended
-the Black-Scholes framework to dividend-paying stocks, American options, and
-stochastic volatility, introducing continuous-time finance methodology.
+The Black--Scholes framework provides a benchmark for pricing options and for
+constructing hedges. Its assumptions are idealized, so market prices are often
+compared through implied volatility and adjusted with richer models. Merton made
+broader contributions to continuous-time finance, including option-pricing work
+with dividends and important methods for valuing contingent claims; later
+research extended the framework to American options and stochastic volatility.
 
-Fischer Black died before the award but was a co-author of the original model.
-Their work revolutionized derivatives trading, creating liquid options markets
-that became a core component of the global financial system. The Black-Scholes
-formula provided traders with a tool to price options consistently, enabling the
-rapid growth of options markets worldwide.
+Fischer Black, who died before the award, was a co-author of the original model
+and made an essential contribution to its development. Their work helped provide
+the analytical foundation for the expansion of organized and over-the-counter
+derivatives markets, although market growth also depended on institutions,
+technology, regulation, and later research.
 
-Merton contributed immensely to continuous-time finance, pioneering stochastic
-calculus applications to portfolio insurance and dynamic hedging strategies. The
-Merton-Scholes framework established the discipline of financial engineering,
-transforming derivatives from exotic instruments into core components of modern
-financial markets. Portfolio insurance strategies replicate put options
-dynamically, providing downside protection without purchasing puts explicitly.
+Merton contributed substantially to continuous-time finance, applying stochastic
+calculus to portfolio choice, dynamic hedging, and the pricing of contingent
+claims. The Black--Scholes--Merton framework became an important foundation for
+financial engineering and for the design of derivatives. A portfolio-insurance
+strategy can seek to replicate a put option dynamically, but such protection is
+subject to model error, transaction costs, jumps, and liquidity constraints.
 
-\subsection*{The Black-Scholes Formula}
-The Black-Scholes formula prices a European call option as:
+\subsection*{The Black--Scholes Formula}
+Under the simplest assumptions, the Black--Scholes formula prices a European call
+option as:
 $C = S_0 N(d_1) - K e^{-rT} N(d_2)$
 where $S_0$ is the current stock price, $K$ is the strike price, $r$ is the risk-free
-rate, T is time to expiration, N is the cumulative normal distribution, and d_1
-and d_2 are functions of volatility and other parameters. The formula shows that
-option prices depend on five observable parameters: stock price, strike price,
-time to expiration, risk-free rate, and volatility.
+rate, $T$ is time to expiration, $N$ is the cumulative normal distribution, and
+$d_1$ and $d_2$ depend on volatility and the other parameters. The formula uses
+the stock price, strike price, time to expiration, risk-free rate, and volatility;
+volatility is generally estimated or inferred from market prices rather than
+directly observed.
 
 \subsection*{Risk-Neutral Valuation}
-Merton and Scholes showed that option pricing can be done using risk-neutral
-probabilities, where investors are assumed to be risk-neutral. This elegant
-insight means that the expected return on the underlying asset does not affect
-the option price, only volatility matters. The risk-neutral valuation approach
-simplified option pricing dramatically and became the foundation for pricing all
-derivative securities.
+Merton and Scholes helped establish risk-neutral valuation, in which prices can
+be computed using an equivalent pricing measure under which suitably discounted
+asset prices are martingales. This is a pricing device, not a claim that investors
+are risk-neutral. Under the model, the physical expected return on the underlying
+asset does not enter the option-pricing formula; the risk-free rate, volatility,
+and other contract terms do. The method became a central tool for pricing many
+derivatives, subject to model and market assumptions.
 
 \subsection*{Dynamic Hedging}
-The Black-Scholes framework enables delta hedging, where options dealers maintain
-a hedged position by continuously adjusting their stock holdings. The delta of
-an option measures its sensitivity to changes in the underlying asset price. By
-holding delta shares of the underlying, dealers can eliminate risk and earn the
-risk-free rate. This dynamic hedging strategy is the operational foundation of
-options market-making.
+The Black--Scholes framework motivates delta hedging, in which options dealers
+adjust their stock holdings as the underlying price changes. An option's delta
+measures its local sensitivity to the underlying price. In the idealized
+continuous-trading model, holding the appropriate delta position eliminates the
+instantaneous diffusion risk and the hedged portfolio earns the risk-free rate.
+In practice, discrete trading, transaction costs, jumps, and parameter error
+leave residual risk.
 
 \section{Impact on Economic Thinking}
-The Black-Scholes-Merton option pricing model revolutionized financial markets,
-providing a standardized framework for pricing options, futures, and derivatives.
-Options markets grew exponentially since the model's introduction. Financial
-engineers developed a vast array of structured products and hybrid securities
-deriving payoffs from underlying assets.
+The Black--Scholes--Merton framework changed financial economics by providing a
+standardized way to value and hedge many option contracts. It supported the
+development of structured products and hybrid securities, while the pricing of
+each instrument still depends on its payoff, market, and model assumptions.
 
-Risk management techniques incorporating delta hedging, gamma, and vega
-sensitivities enable institutions to manage exposure to price movements. Insurance
-industry relies on Black-Scholes pricing for valuing guarantee liabilities. Banks
-use derivatives pricing frameworks for capital reserves under Basel regulations.
-Value-at-Risk measures originated from Black-Scholes volatility estimation.
+Risk-management techniques use delta, gamma, and vega sensitivities to monitor
+exposure to price and volatility movements. Insurers may use option-pricing
+methods to value embedded guarantees, and banks use derivatives-pricing models
+alongside broader risk and capital frameworks. Value-at-Risk is a separate risk-
+measurement framework, although it can use volatility estimates and distributions
+informed by option markets.
 
-Derivatives became integral to corporate finance and treasury management. Hedge
-funds and investment strategies rely on options for speculation, arbitrage, and
-risk transfer. Option pricing theory extended to real options analysis for
-capital budgeting decisions, valuing investment timing flexibility. The
-Black-Scholes framework created the financial engineering profession, developing
-structured products and securitization instruments.
+Derivatives became important tools in corporate finance and treasury management.
+Investment strategies use options for hedging, speculation, arbitrage, and risk
+transfer. Option-pricing theory also informed real-options analysis for capital
+budgeting, where investment timing and other forms of managerial flexibility have
+value. Financial engineering subsequently developed structured products and
+securitization instruments using many theories and technologies.
 
-Although the 1998 Long-Term Capital Management crisis exposed limitations of
-simplistic volatility assumptions, the fundamental contribution of the
-Black-Scholes-Merton framework stands as a monumental innovation in financial
-mathematics. Their work created modern derivatives markets, enabling efficient
-risk transfer, wealth creation, speculation, and liquidity provision. The price
-discovery function of derivatives constitutes the backbone of modern financial
-infrastructure.
+The 1998 Long-Term Capital Management crisis, in which Merton and Scholes were
+involved, highlighted the dangers of leverage, liquidity risk, model error, and
+correlated market moves that are not captured by simple assumptions. These events
+did not invalidate the framework's analytical contribution, but they underscored
+that model-based prices and hedges are conditional on their assumptions. Modern
+derivatives markets support risk transfer and price discovery, while also
+creating counterparty, leverage, and systemic risks.
 
 \subsection*{Financial Engineering}
-The Black-Scholes model launched the field of financial engineering, where
-mathematicians and physicists apply quantitative techniques to solve financial
-problems. Derivatives structuring, arbitrage strategies, and risk management
-techniques all build on the Black-Scholes foundation. Financial engineers create
-customized securities with specific risk-return profiles for clients.
+The Black--Scholes model became one of the foundations of financial engineering,
+where quantitative methods are applied to financial problems. Derivatives
+structuring, hedging, and risk management draw on its ideas alongside portfolio
+theory, numerical methods, empirical modeling, and institutional knowledge.
+Financial engineers create customized securities with risk exposures tailored to
+particular clients and constraints.
 
 \subsection*{Real Options}
-Merton extended option pricing to real options, applying the framework to
-investment decisions under uncertainty. Real options analysis values managerial
-flexibility in capital budgeting, treating investment opportunities as options.
+Option-pricing ideas extend to real-options analysis, which applies the logic of
+contingent claims to investment decisions under uncertainty. Real-options analysis
+values managerial flexibility in capital budgeting, treating investment
+opportunities as options.
 The option to delay, expand, contract, or abandon projects has value that standard
 DCF analysis misses. Real options have applications in R\&D, natural resources,
 and strategic investment.
 
 \section{Modern Perspectives Today}
-Option pricing theory continues to evolve from the Black-Scholes foundation.
-Stochastic volatility models like Heston, GARCH, and implied volatilities address
-the constant volatility limitation. Volatility smiles and skewness observed in
-markets reflect the failure of the constant volatility assumption.
+Option-pricing theory continues to evolve from the Black--Scholes foundation.
+Stochastic-volatility models such as Heston's, local-volatility models, and
+jump-diffusion models address limitations of constant volatility. GARCH models
+are used mainly for time-series volatility forecasting, while implied-volatility
+surfaces summarize the variation in market prices across strikes and maturities.
+Volatility smiles and skews show that the constant-volatility assumption is an
+imperfect description of observed prices.
 
-Jump-diffusion processes incorporate discontinuous price movements, improving
-pricing for assets prone to sudden changes. Real options analysis extends
-Black-Scholes to capital budgeting, valuing sequential investments, abandonment
-flexibility, and expansion options. Option pricing is used for valuing venture
-projects, R\&D investments, patent licensing, and infrastructure projects.
+Jump-diffusion processes incorporate discontinuous price movements and can improve
+pricing for assets prone to sudden changes. Real-options analysis extends the
+contingent-claims approach to capital budgeting, valuing sequential investments,
+abandonment flexibility, and expansion options. These methods can be applied to
+venture projects, R\&D investments, patent licensing, and infrastructure projects,
+although the valuation is sensitive to assumptions.
 
-Insurance companies utilize option pricing to value embedded guarantees in annuities
-and life policies. Pension plans hedge longevity risks using options markets.
-Derivative exchanges implement Black-Scholes-based pricing for clearinghouse
-margin requirements. Electronic trading algorithms use Black-Scholes Greeks for
-managing inventory risk.
+Insurance companies use option-pricing methods to value some embedded guarantees
+in annuities and life policies. Pension plans and insurers manage longevity and
+other risks with a range of derivatives, including swaps and options. Exchanges
+and clearinghouses use risk models for margin and settlement, while trading firms
+may use Black--Scholes Greeks as one input in managing inventory risk.
 
-Machine learning approaches integrate option pricing signals into trading
-strategies. High-frequency trading incorporates volatility surface dynamics
-derived from implied volatilities. The Black-Scholes framework has been adapted
-to cryptocurrency options markets as a new asset class. The Black-Scholes-Merton
-legacy continues evolving, adapting to new asset classes, innovative trading
-mechanisms, and financial technologies.
+Machine-learning methods are increasingly used alongside traditional models for
+volatility forecasting, calibration, and trading research. Trading firms analyze
+volatility surfaces and their dynamics, and Black--Scholes-style benchmarks are
+also used for newer asset classes, including cryptocurrency options. The
+Black--Scholes--Merton legacy continues to evolve as markets, technologies, and
+risk-management practices change.
+
+\subsection*{Key References}
+\begin{itemize}
+    \item Black, F., \& Scholes, M. (1973). ``The Pricing of Options and Corporate Liabilities.'' \textit{Journal of Political Economy}, 81(3), 637--654.
+    \item Merton, R. C. (1973). ``Theory of Rational Option Pricing.'' \textit{The Bell Journal of Economics and Management Science}, 4(1), 141--183.
+\end{itemize}
